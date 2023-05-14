@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/fundo03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #beb8b080;
+  padding: 40px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000070;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  border-radius: 0.1rem;
+  color: #333;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #009688;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -7px;
+  transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+  font-size: 13px;
+  margin-top: -1;
+}
+
+input[type=submit] {
+  width: 150px;
+  border: 2px solid #009688;
+  background-color: #009688;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 1px 0px #00000030;
+  transition: 0.5s;
+  color: #fff;
+}
+
+input[type=submit]:hover {
+  color: #333;
+}
+
+.centralizar {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 12pt;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #009688;
+}
+
+a:hover {
+  color: #000000;
+}
